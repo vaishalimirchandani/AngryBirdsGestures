@@ -24,19 +24,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Velocidad" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y75-uP-gDJ">
-                                <rect key="frame" x="31" y="95" width="75" height="21"/>
+                                <rect key="frame" x="26" y="95" width="75" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ángulo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="InU-gg-OkS">
-                                <rect key="frame" x="31" y="136" width="75" height="21"/>
+                                <rect key="frame" x="26" y="136" width="75" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XX.XX m/s" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="92J-RG-MFq">
-                                <rect key="frame" x="490" y="95" width="81" height="21"/>
+                                <rect key="frame" x="493" y="95" width="81" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="81" id="TES-jl-imE"/>
                                 </constraints>
@@ -45,46 +45,46 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rad" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pPn-9I-7gV">
-                                <rect key="frame" x="490" y="136" width="81" height="21"/>
+                                <rect key="frame" x="493" y="136" width="81" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="dZe-jE-lYf">
-                                <rect key="frame" x="114" y="91" width="369" height="31"/>
+                                <rect key="frame" x="109" y="91" width="377" height="31"/>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Loi-Da-980">
-                                <rect key="frame" x="114" y="132" width="369" height="31"/>
+                                <rect key="frame" x="109" y="132" width="377" height="31"/>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distancia" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="le1-r6-86P">
-                                <rect key="frame" x="31" y="498" width="71" height="21"/>
+                                <rect key="frame" x="26" y="498" width="71" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escala" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xi2-As-YMi">
-                                <rect key="frame" x="31" y="539" width="75" height="21"/>
+                                <rect key="frame" x="26" y="539" width="75" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="m" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sW7-wQ-vU0">
-                                <rect key="frame" x="490" y="498" width="81" height="21"/>
+                                <rect key="frame" x="493" y="498" width="81" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mpp" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBN-1T-pQ1">
-                                <rect key="frame" x="490" y="539" width="81" height="21"/>
+                                <rect key="frame" x="493" y="539" width="81" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="0wf-ag-EzG">
-                                <rect key="frame" x="114" y="535" width="369" height="31"/>
+                                <rect key="frame" x="109" y="535" width="377" height="31"/>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="AuK-oT-Jp4">
-                                <rect key="frame" x="114" y="494" width="369" height="31"/>
+                                <rect key="frame" x="109" y="494" width="377" height="31"/>
                             </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -107,13 +107,13 @@
                             <constraint firstItem="sW7-wQ-vU0" firstAttribute="trailing" secondItem="dBN-1T-pQ1" secondAttribute="trailing" id="abs-fj-m0t"/>
                             <constraint firstItem="le1-r6-86P" firstAttribute="baseline" secondItem="sW7-wQ-vU0" secondAttribute="baseline" id="b9k-0e-mLq"/>
                             <constraint firstItem="dBN-1T-pQ1" firstAttribute="leading" secondItem="0wf-ag-EzG" secondAttribute="trailing" constant="9" id="eeu-Xd-ZE7"/>
-                            <constraint firstItem="y75-uP-gDJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="gmo-hm-D83"/>
+                            <constraint firstItem="y75-uP-gDJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="gmo-hm-D83"/>
                             <constraint firstItem="0wf-ag-EzG" firstAttribute="leading" secondItem="AuK-oT-Jp4" secondAttribute="leading" id="hca-lH-5q8"/>
                             <constraint firstItem="pPn-9I-7gV" firstAttribute="leading" secondItem="Loi-Da-980" secondAttribute="trailing" constant="9" id="kWn-6U-7iQ"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xi2-As-YMi" secondAttribute="bottom" constant="40" id="kcx-MC-mtW"/>
                             <constraint firstItem="InU-gg-OkS" firstAttribute="leading" secondItem="le1-r6-86P" secondAttribute="leading" id="kg1-wD-OYj"/>
                             <constraint firstItem="y75-uP-gDJ" firstAttribute="trailing" secondItem="InU-gg-OkS" secondAttribute="trailing" id="oEr-44-3qm"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="92J-RG-MFq" secondAttribute="trailing" constant="13" id="osk-PV-2S7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="92J-RG-MFq" secondAttribute="trailing" constant="10" id="osk-PV-2S7"/>
                             <constraint firstItem="xi2-As-YMi" firstAttribute="top" secondItem="le1-r6-86P" secondAttribute="bottom" constant="20" id="qUZ-Ru-oq7"/>
                             <constraint firstItem="0wf-ag-EzG" firstAttribute="top" secondItem="AuK-oT-Jp4" secondAttribute="bottom" constant="11" id="rxt-pS-y4l"/>
                             <constraint firstItem="92J-RG-MFq" firstAttribute="trailing" secondItem="pPn-9I-7gV" secondAttribute="trailing" id="tII-uu-Jl8"/>

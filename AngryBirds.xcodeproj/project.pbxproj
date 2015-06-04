@@ -11,8 +11,8 @@
 		CECFCE791B20D338000BCAE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECFCE781B20D338000BCAE4 /* ViewController.swift */; };
 		CECFCE7C1B20D338000BCAE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CECFCE7A1B20D338000BCAE4 /* Main.storyboard */; };
 		CECFCE7E1B20D338000BCAE4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CECFCE7D1B20D338000BCAE4 /* Images.xcassets */; };
-		CECFCE811B20D338000BCAE4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CECFCE7F1B20D338000BCAE4 /* LaunchScreen.xib */; };
 		CECFCE8D1B20D339000BCAE4 /* AngryBirdsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECFCE8C1B20D339000BCAE4 /* AngryBirdsTests.swift */; };
+		CECFCE971B21080F000BCAE4 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CECFCE961B21080F000BCAE4 /* Launch Screen.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,10 +32,10 @@
 		CECFCE781B20D338000BCAE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CECFCE7B1B20D338000BCAE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CECFCE7D1B20D338000BCAE4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		CECFCE801B20D338000BCAE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		CECFCE861B20D338000BCAE4 /* AngryBirdsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AngryBirdsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CECFCE8B1B20D339000BCAE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CECFCE8C1B20D339000BCAE4 /* AngryBirdsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngryBirdsTests.swift; sourceTree = "<group>"; };
+		CECFCE961B21080F000BCAE4 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +80,8 @@
 				CECFCE761B20D338000BCAE4 /* AppDelegate.swift */,
 				CECFCE781B20D338000BCAE4 /* ViewController.swift */,
 				CECFCE7A1B20D338000BCAE4 /* Main.storyboard */,
+				CECFCE961B21080F000BCAE4 /* Launch Screen.xib */,
 				CECFCE7D1B20D338000BCAE4 /* Images.xcassets */,
-				CECFCE7F1B20D338000BCAE4 /* LaunchScreen.xib */,
 				CECFCE741B20D338000BCAE4 /* Supporting Files */,
 			);
 			path = AngryBirds;
@@ -193,8 +193,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CECFCE7C1B20D338000BCAE4 /* Main.storyboard in Resources */,
-				CECFCE811B20D338000BCAE4 /* LaunchScreen.xib in Resources */,
 				CECFCE7E1B20D338000BCAE4 /* Images.xcassets in Resources */,
+				CECFCE971B21080F000BCAE4 /* Launch Screen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,14 +242,6 @@
 				CECFCE7B1B20D338000BCAE4 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		CECFCE7F1B20D338000BCAE4 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CECFCE801B20D338000BCAE4 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -342,6 +334,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = AngryBirds/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -352,6 +345,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = AngryBirds/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
