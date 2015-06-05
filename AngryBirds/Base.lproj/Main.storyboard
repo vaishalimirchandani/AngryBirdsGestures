@@ -59,13 +59,13 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="dZe-jE-lYf">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="55" minValue="10" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="dZe-jE-lYf">
                                 <rect key="frame" x="109" y="91" width="377" height="31"/>
                                 <connections>
                                     <action selector="getSpeed:" destination="BYZ-38-t0r" eventType="valueChanged" id="AXI-0s-EpE"/>
                                 </connections>
                             </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Loi-Da-980">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.78500000000000003" minValue="0.0" maxValue="1.5700000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="Loi-Da-980">
                                 <rect key="frame" x="109" y="132" width="377" height="31"/>
                                 <connections>
                                     <action selector="getAngle:" destination="BYZ-38-t0r" eventType="valueChanged" id="Txq-a0-nvK"/>
@@ -89,8 +89,9 @@
                                     <action selector="getDistance:" destination="BYZ-38-t0r" eventType="valueChanged" id="U7G-ui-Elj"/>
                                 </connections>
                             </slider>
-                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="RC6-5A-TfN" customClass="ParabolicTrajectoryView" customModule="AngryBirds" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RC6-5A-TfN" customClass="ParabolicTrajectoryView" customModule="AngryBirds" customModuleProvider="target">
                                 <rect key="frame" x="26" y="182" width="548" height="338"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

@@ -47,7 +47,6 @@ class ViewController: UIViewController, ParabolicTrajectoryViewDataSource {
         parabolicTrayectory.setNeedsDisplay()
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -78,7 +77,5 @@ class ViewController: UIViewController, ParabolicTrajectoryViewDataSource {
     func distanceToObjective() -> Double {
         return parabolicTrajectoryModel.objective
     }
-
-
 }
 

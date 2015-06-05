@@ -49,6 +49,12 @@ class ParabolicTrajectoryView: UIView{
             return
         }
         
+        //limpia el trazo anterior
+        var context:CGContextRef  = UIGraphicsGetCurrentContext()
+        CGContextClearRect(context, rect)
+        
+        
+        
         var path = UIBezierPath()
         
         let t_initial = dataSource.startParabolicTrajectoryView()
@@ -71,8 +77,9 @@ class ParabolicTrajectoryView: UIView{
         path.lineWidth = 3
         UIColor.redColor().set()
         path.stroke()
-        //drawLuke()
-        //drawVader()
+        drawLuke()
+        drawVader()
+        
     }
     
     
@@ -94,9 +101,4 @@ class ParabolicTrajectoryView: UIView{
             img.drawInRect(rect)
         }
     }
-    
-    private func drawBackground(){
-        if let img = UIImage(named: "background.png"){
-            let rect = CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height)
-            img.drawInRect(rect)    }}
 }
