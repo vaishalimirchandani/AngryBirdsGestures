@@ -10,7 +10,7 @@
 		CECFCE771B20D338000BCAE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECFCE761B20D338000BCAE4 /* AppDelegate.swift */; };
 		CECFCE791B20D338000BCAE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECFCE781B20D338000BCAE4 /* ViewController.swift */; };
 		CECFCE7C1B20D338000BCAE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CECFCE7A1B20D338000BCAE4 /* Main.storyboard */; };
-		CECFCE7E1B20D338000BCAE4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CECFCE7D1B20D338000BCAE4 /* Images.xcassets */; };
+		CECFCE7E1B20D338000BCAE4 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CECFCE7D1B20D338000BCAE4 /* images.xcassets */; };
 		CECFCE8D1B20D339000BCAE4 /* AngryBirdsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECFCE8C1B20D339000BCAE4 /* AngryBirdsTests.swift */; };
 		CECFCE971B21080F000BCAE4 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CECFCE961B21080F000BCAE4 /* Launch Screen.xib */; };
 /* End PBXBuildFile section */
@@ -31,7 +31,7 @@
 		CECFCE761B20D338000BCAE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CECFCE781B20D338000BCAE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CECFCE7B1B20D338000BCAE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CECFCE7D1B20D338000BCAE4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CECFCE7D1B20D338000BCAE4 /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = images.xcassets; sourceTree = "<group>"; };
 		CECFCE861B20D338000BCAE4 /* AngryBirdsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AngryBirdsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CECFCE8B1B20D339000BCAE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CECFCE8C1B20D339000BCAE4 /* AngryBirdsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngryBirdsTests.swift; sourceTree = "<group>"; };
@@ -81,7 +81,7 @@
 				CECFCE781B20D338000BCAE4 /* ViewController.swift */,
 				CECFCE7A1B20D338000BCAE4 /* Main.storyboard */,
 				CECFCE961B21080F000BCAE4 /* Launch Screen.xib */,
-				CECFCE7D1B20D338000BCAE4 /* Images.xcassets */,
+				CECFCE7D1B20D338000BCAE4 /* images.xcassets */,
 				CECFCE741B20D338000BCAE4 /* Supporting Files */,
 			);
 			path = AngryBirds;
@@ -193,7 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CECFCE7C1B20D338000BCAE4 /* Main.storyboard in Resources */,
-				CECFCE7E1B20D338000BCAE4 /* Images.xcassets in Resources */,
+				CECFCE7E1B20D338000BCAE4 /* images.xcassets in Resources */,
 				CECFCE971B21080F000BCAE4 /* Launch Screen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +405,7 @@
 				CECFCE921B20D339000BCAE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CECFCE931B20D339000BCAE4 /* Build configuration list for PBXNativeTarget "AngryBirdsTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +414,7 @@
 				CECFCE951B20D339000BCAE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
