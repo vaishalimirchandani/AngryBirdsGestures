@@ -10,7 +10,7 @@ import Foundation
 
 let EARTH_GRAVITY = 9.8067
 
-class TrajectoryModel {
+class ParabolicTrajectoryModel {
     
     private var speedXaxis = 100.0
     private var speedYaxis = 100.0

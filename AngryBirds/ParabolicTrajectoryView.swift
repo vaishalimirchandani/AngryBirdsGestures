@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-protocol TrajectoryViewDataSource:class{
+protocol ParabolicTrajectoryViewDataSource: class{
     func startParabolicTrajectoryView () -> Double
     func endParabolicTrajectoryView () -> Double
     func pointOfParabolicTrajectoryView (time:Double) -> (distance:Double, height:Double)
@@ -17,13 +17,12 @@ protocol TrajectoryViewDataSource:class{
 }
 
 @IBDesignable
-
-class TrajectoryView: UIView{
+class ParabolicTrajectoryView: UIView{
     
-    var dataSource : TrajectoryViewDataSource!
+    var dataSource : ParabolicTrajectoryViewDataSource!
     
     #if TARGET_INTERFACE_BUILDER
-        class FakeDataSource : TrajectoryViewDataSource {
+        class FakeDataSource : ParabolicTrajectoryViewDataSource {
         
             func startParabolicTrajectoryView() -> Double {
                 return 0.0
@@ -62,7 +61,6 @@ class TrajectoryView: UIView{
         
         let h:Double = Double(bounds.size.height)
         
-        
         path.moveToPoint(CGPointMake(CGFloat(x+20) ,CGFloat(h-y)))
         
         for var t=t_initial ; t<t_final ; t+=0.1 {
@@ -73,8 +71,8 @@ class TrajectoryView: UIView{
         path.lineWidth = 3
         UIColor.redColor().set()
         path.stroke()
-        drawLuke()
-        drawVader()
+        //drawLuke()
+        //drawVader()
     }
     
     
@@ -96,4 +94,9 @@ class TrajectoryView: UIView{
             img.drawInRect(rect)
         }
     }
+    
+    private func drawBackground(){
+        if let img = UIImage(named: "background.png"){
+            let rect = CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height)
+            img.drawInRect(rect)    }}
 }

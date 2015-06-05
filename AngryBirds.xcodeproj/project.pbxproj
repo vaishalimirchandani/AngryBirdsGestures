@@ -86,6 +86,8 @@
 				CECFCE7A1B20D338000BCAE4 /* Main.storyboard */,
 				CECFCE961B21080F000BCAE4 /* Launch Screen.xib */,
 				CECFCE7D1B20D338000BCAE4 /* images.xcassets */,
+				CE89CAD31B21350000FDC811 /* ParabolicTrajectoryModel.swift */,
+				CE89CAD51B21386900FDC811 /* ParabolicTrajectoryView.swift */,
 				CECFCE741B20D338000BCAE4 /* Supporting Files */,
 			);
 			path = AngryBirds;
@@ -95,8 +97,6 @@
 			isa = PBXGroup;
 			children = (
 				CECFCE751B20D338000BCAE4 /* Info.plist */,
-				CE89CAD31B21350000FDC811 /* ParabolicTrajectoryModel.swift */,
-				CE89CAD51B21386900FDC811 /* ParabolicTrajectoryView.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
