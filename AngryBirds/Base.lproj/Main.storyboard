@@ -96,6 +96,8 @@
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="A0N-hi-Jyh" appends="YES" id="je3-F0-XtI"/>
                                     <outletCollection property="gestureRecognizers" destination="goq-2e-yUv" appends="YES" id="jRY-qd-iKr"/>
+                                    <outletCollection property="gestureRecognizers" destination="ERZ-64-TQw" appends="YES" id="7cm-nT-SmE"/>
+                                    <outletCollection property="gestureRecognizers" destination="CpH-xL-ycM" appends="YES" id="leS-Ty-eNp"/>
                                 </connections>
                             </view>
                         </subviews>
@@ -176,11 +178,21 @@
                         <action selector="rotationChangeAngle:" destination="BYZ-38-t0r" id="N9M-zP-OHg"/>
                     </connections>
                 </rotationGestureRecognizer>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="goq-2e-yUv">
+                <panGestureRecognizer minimumNumberOfTouches="2" id="goq-2e-yUv">
                     <connections>
                         <action selector="panChangeSpeed:" destination="BYZ-38-t0r" id="VoF-cW-D27"/>
                     </connections>
                 </panGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="ERZ-64-TQw">
+                    <connections>
+                        <action selector="swipeRightChangeDistance:" destination="BYZ-38-t0r" id="iEJ-L5-WsM"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="CpH-xL-ycM">
+                    <connections>
+                        <action selector="swipeLeftChangeDistance:" destination="BYZ-38-t0r" id="eSd-cl-4lR"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="421" y="360"/>
         </scene>

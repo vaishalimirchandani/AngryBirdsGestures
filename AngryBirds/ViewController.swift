@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController, ParabolicTrajectoryViewDataSource {
     
     
+    
     @IBOutlet weak var speedValue: UILabel!
     
     @IBOutlet weak var angleValue: UILabel!
@@ -28,6 +29,7 @@ class ViewController: UIViewController, ParabolicTrajectoryViewDataSource {
     var parabolicTrajectoryModel:ParabolicTrajectoryModel!
     
     @IBAction func panChangeSpeed(sender: UIPanGestureRecognizer) {
+        
         let position = sender.translationInView(sender.view!)
         let speed = parabolicTrajectoryModel.speed + Double(position.y)
         setSpeed(speed)
@@ -40,6 +42,25 @@ class ViewController: UIViewController, ParabolicTrajectoryViewDataSource {
         setAngle(angle)
     }
     
+    @IBAction func swipeRightChangeDistance(sender: UISwipeGestureRecognizer) {
+        let distance = parabolicTrajectoryModel.objective+20
+        if(distance <= Double(parabolicTrayectory.bounds.size.width-40)){
+            setDistance(distance)
+        }
+        else{
+            return
+        }
+    }
+    
+    @IBAction func swipeLeftChangeDistance(sender: UISwipeGestureRecognizer) {
+        let distance = parabolicTrajectoryModel.objective-20
+        if(distance >= 0){
+            setDistance(distance)
+        }
+        else{
+            return
+        }
+    }
     
     @IBAction func getSpeed(sender: UISlider) {
         let speed = Double(sender.value)
@@ -53,9 +74,8 @@ class ViewController: UIViewController, ParabolicTrajectoryViewDataSource {
     
     @IBAction func getDistance(sender: UISlider) {
         distanceSlider.maximumValue = Float(parabolicTrayectory.bounds.size.width-100)
-        distanceValue.text = String(format: "%.2f m", arguments: [sender.value])
-        parabolicTrajectoryModel.objective = Double(sender.value)+50
-        parabolicTrayectory.setNeedsDisplay()
+        let distance = Double(sender.value)+50
+        setDistance(distance)
     }
     
     override func viewDidLoad() {
@@ -98,6 +118,12 @@ class ViewController: UIViewController, ParabolicTrajectoryViewDataSource {
     func setSpeed(setSpeed:Double){
         parabolicTrajectoryModel.speed = setSpeed
         speedValue.text = String(format:"%.2f m/s", arguments: [setSpeed])
+        parabolicTrayectory.setNeedsDisplay()
+    }
+    
+    func setDistance(setDistance:Double){
+        distanceValue.text = String(format: "%.2f m", arguments: [setDistance])
+        parabolicTrajectoryModel.objective = setDistance
         parabolicTrayectory.setNeedsDisplay()
     }
 }
