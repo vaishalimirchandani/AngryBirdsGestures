@@ -8,7 +8,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AngryBirds" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AngryBirdsGestures" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -89,9 +89,14 @@
                                     <action selector="getDistance:" destination="BYZ-38-t0r" eventType="valueChanged" id="U7G-ui-Elj"/>
                                 </connections>
                             </slider>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RC6-5A-TfN" customClass="ParabolicTrajectoryView" customModule="AngryBirds" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RC6-5A-TfN" customClass="ParabolicTrajectoryView" customModule="AngryBirdsGestures" customModuleProvider="target">
                                 <rect key="frame" x="26" y="182" width="548" height="338"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="A0N-hi-Jyh" appends="YES" id="je3-F0-XtI"/>
+                                    <outletCollection property="gestureRecognizers" destination="goq-2e-yUv" appends="YES" id="jRY-qd-iKr"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -166,6 +171,16 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <rotationGestureRecognizer id="A0N-hi-Jyh">
+                    <connections>
+                        <action selector="rotationChangeAngle:" destination="BYZ-38-t0r" id="N9M-zP-OHg"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="goq-2e-yUv">
+                    <connections>
+                        <action selector="panChangeSpeed:" destination="BYZ-38-t0r" id="VoF-cW-D27"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="421" y="360"/>
         </scene>

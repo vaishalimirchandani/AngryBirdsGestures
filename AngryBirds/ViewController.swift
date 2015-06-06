@@ -14,7 +14,7 @@ class ViewController: UIViewController, ParabolicTrajectoryViewDataSource {
     @IBOutlet weak var speedValue: UILabel!
     
     @IBOutlet weak var angleValue: UILabel!
-    
+
     @IBOutlet weak var distanceValue: UILabel!
     
     @IBOutlet weak var speedSlider: UISlider!
@@ -27,17 +27,28 @@ class ViewController: UIViewController, ParabolicTrajectoryViewDataSource {
     
     var parabolicTrajectoryModel:ParabolicTrajectoryModel!
     
+    @IBAction func panChangeSpeed(sender: UIPanGestureRecognizer) {
+        let position = sender.translationInView(sender.view!)
+        let speed = parabolicTrajectoryModel.speed + Double(position.y)
+        setSpeed(speed)
+        sender.setTranslation(CGPointZero, inView: sender.view!)
+    }
+
+    @IBAction func rotationChangeAngle(sender: UIRotationGestureRecognizer) {
+        //consiguir rotación y pintar
+        let angle = Double(sender.rotation)
+        setAngle(angle)
+    }
+    
     
     @IBAction func getSpeed(sender: UISlider) {
-        parabolicTrajectoryModel.speed = Double(sender.value)
-        speedValue.text = String(format:"%.2f m/s", arguments: [sender.value])
-        parabolicTrayectory.setNeedsDisplay()
+        let speed = Double(sender.value)
+        setSpeed(speed)
     }
     
     @IBAction func getAngle(sender: UISlider) {
-        parabolicTrajectoryModel.angle = Double(sender.value)
-        angleValue.text = String(format:"%.2f rad", arguments: [sender.value])
-        parabolicTrayectory.setNeedsDisplay()
+        let angle = Double(sender.value)
+        setAngle(angle)
     }
     
     @IBAction func getDistance(sender: UISlider) {
@@ -76,6 +87,18 @@ class ViewController: UIViewController, ParabolicTrajectoryViewDataSource {
     
     func distanceToObjective() -> Double {
         return parabolicTrajectoryModel.objective
+    }
+    
+    func setAngle(setAngle:Double){
+        parabolicTrajectoryModel.angle = setAngle
+        angleValue.text = String(format:"%.2f rad", arguments: [setAngle])
+        parabolicTrayectory.setNeedsDisplay()
+    }
+    
+    func setSpeed(setSpeed:Double){
+        parabolicTrajectoryModel.speed = setSpeed
+        speedValue.text = String(format:"%.2f m/s", arguments: [setSpeed])
+        parabolicTrayectory.setNeedsDisplay()
     }
 }
 
