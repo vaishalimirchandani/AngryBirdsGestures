@@ -30,13 +30,13 @@
 /* Begin PBXFileReference section */
 		CE89CAD31B21350000FDC811 /* ParabolicTrajectoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParabolicTrajectoryModel.swift; sourceTree = "<group>"; };
 		CE89CAD51B21386900FDC811 /* ParabolicTrajectoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParabolicTrajectoryView.swift; sourceTree = "<group>"; };
-		CECFCE711B20D338000BCAE4 /* AngryBirds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AngryBirds.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECFCE711B20D338000BCAE4 /* AngryBirdsGestures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AngryBirdsGestures.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CECFCE751B20D338000BCAE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CECFCE761B20D338000BCAE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CECFCE781B20D338000BCAE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CECFCE7B1B20D338000BCAE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CECFCE7D1B20D338000BCAE4 /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = images.xcassets; sourceTree = "<group>"; };
-		CECFCE861B20D338000BCAE4 /* AngryBirdsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AngryBirdsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECFCE861B20D338000BCAE4 /* AngryBirdsGesturesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AngryBirdsGesturesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CECFCE8B1B20D339000BCAE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CECFCE8C1B20D339000BCAE4 /* AngryBirdsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngryBirdsTests.swift; sourceTree = "<group>"; };
 		CECFCE961B21080F000BCAE4 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
@@ -63,8 +63,8 @@
 		CECFCE681B20D338000BCAE4 = {
 			isa = PBXGroup;
 			children = (
-				CECFCE731B20D338000BCAE4 /* AngryBirds */,
-				CECFCE891B20D339000BCAE4 /* AngryBirdsTests */,
+				CECFCE731B20D338000BCAE4 /* AngryBirdsGestures */,
+				CECFCE891B20D339000BCAE4 /* AngryBirdsGesturesTests */,
 				CECFCE721B20D338000BCAE4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,13 +72,13 @@
 		CECFCE721B20D338000BCAE4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CECFCE711B20D338000BCAE4 /* AngryBirds.app */,
-				CECFCE861B20D338000BCAE4 /* AngryBirdsTests.xctest */,
+				CECFCE711B20D338000BCAE4 /* AngryBirdsGestures.app */,
+				CECFCE861B20D338000BCAE4 /* AngryBirdsGesturesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CECFCE731B20D338000BCAE4 /* AngryBirds */ = {
+		CECFCE731B20D338000BCAE4 /* AngryBirdsGestures */ = {
 			isa = PBXGroup;
 			children = (
 				CECFCE761B20D338000BCAE4 /* AppDelegate.swift */,
@@ -90,6 +90,7 @@
 				CE89CAD51B21386900FDC811 /* ParabolicTrajectoryView.swift */,
 				CECFCE741B20D338000BCAE4 /* Supporting Files */,
 			);
+			name = AngryBirdsGestures;
 			path = AngryBirds;
 			sourceTree = "<group>";
 		};
@@ -101,12 +102,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		CECFCE891B20D339000BCAE4 /* AngryBirdsTests */ = {
+		CECFCE891B20D339000BCAE4 /* AngryBirdsGesturesTests */ = {
 			isa = PBXGroup;
 			children = (
 				CECFCE8C1B20D339000BCAE4 /* AngryBirdsTests.swift */,
 				CECFCE8A1B20D339000BCAE4 /* Supporting Files */,
 			);
+			name = AngryBirdsGesturesTests;
 			path = AngryBirdsTests;
 			sourceTree = "<group>";
 		};
@@ -121,9 +123,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CECFCE701B20D338000BCAE4 /* AngryBirds */ = {
+		CECFCE701B20D338000BCAE4 /* AngryBirdsGestures */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CECFCE901B20D339000BCAE4 /* Build configuration list for PBXNativeTarget "AngryBirds" */;
+			buildConfigurationList = CECFCE901B20D339000BCAE4 /* Build configuration list for PBXNativeTarget "AngryBirdsGestures" */;
 			buildPhases = (
 				CECFCE6D1B20D338000BCAE4 /* Sources */,
 				CECFCE6E1B20D338000BCAE4 /* Frameworks */,
@@ -133,14 +135,14 @@
 			);
 			dependencies = (
 			);
-			name = AngryBirds;
+			name = AngryBirdsGestures;
 			productName = AngryBirds;
-			productReference = CECFCE711B20D338000BCAE4 /* AngryBirds.app */;
+			productReference = CECFCE711B20D338000BCAE4 /* AngryBirdsGestures.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CECFCE851B20D338000BCAE4 /* AngryBirdsTests */ = {
+		CECFCE851B20D338000BCAE4 /* AngryBirdsGesturesTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CECFCE931B20D339000BCAE4 /* Build configuration list for PBXNativeTarget "AngryBirdsTests" */;
+			buildConfigurationList = CECFCE931B20D339000BCAE4 /* Build configuration list for PBXNativeTarget "AngryBirdsGesturesTests" */;
 			buildPhases = (
 				CECFCE821B20D338000BCAE4 /* Sources */,
 				CECFCE831B20D338000BCAE4 /* Frameworks */,
@@ -151,9 +153,9 @@
 			dependencies = (
 				CECFCE881B20D338000BCAE4 /* PBXTargetDependency */,
 			);
-			name = AngryBirdsTests;
+			name = AngryBirdsGesturesTests;
 			productName = AngryBirdsTests;
-			productReference = CECFCE861B20D338000BCAE4 /* AngryBirdsTests.xctest */;
+			productReference = CECFCE861B20D338000BCAE4 /* AngryBirdsGesturesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -174,7 +176,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CECFCE6C1B20D338000BCAE4 /* Build configuration list for PBXProject "AngryBirds" */;
+			buildConfigurationList = CECFCE6C1B20D338000BCAE4 /* Build configuration list for PBXProject "AngryBirdsGestures" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -187,8 +189,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CECFCE701B20D338000BCAE4 /* AngryBirds */,
-				CECFCE851B20D338000BCAE4 /* AngryBirdsTests */,
+				CECFCE701B20D338000BCAE4 /* AngryBirdsGestures */,
+				CECFCE851B20D338000BCAE4 /* AngryBirdsGesturesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -238,7 +240,7 @@
 /* Begin PBXTargetDependency section */
 		CECFCE881B20D338000BCAE4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CECFCE701B20D338000BCAE4 /* AngryBirds */;
+			target = CECFCE701B20D338000BCAE4 /* AngryBirdsGestures */;
 			targetProxy = CECFCE871B20D338000BCAE4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -345,7 +347,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = AngryBirds/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AngryBirdsGestures;
 			};
 			name = Debug;
 		};
@@ -356,7 +358,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = AngryBirds/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AngryBirdsGestures;
 			};
 			name = Release;
 		};
@@ -374,8 +376,8 @@
 				);
 				INFOPLIST_FILE = AngryBirdsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AngryBirds.app/AngryBirds";
+				PRODUCT_NAME = AngryBirdsGesturesTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AngryBirdsGestures.app/AngryBirdsGestures";
 			};
 			name = Debug;
 		};
@@ -389,15 +391,15 @@
 				);
 				INFOPLIST_FILE = AngryBirdsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AngryBirds.app/AngryBirds";
+				PRODUCT_NAME = AngryBirdsGesturesTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AngryBirdsGestures.app/AngryBirdsGestures";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CECFCE6C1B20D338000BCAE4 /* Build configuration list for PBXProject "AngryBirds" */ = {
+		CECFCE6C1B20D338000BCAE4 /* Build configuration list for PBXProject "AngryBirdsGestures" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CECFCE8E1B20D339000BCAE4 /* Debug */,
@@ -406,7 +408,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CECFCE901B20D339000BCAE4 /* Build configuration list for PBXNativeTarget "AngryBirds" */ = {
+		CECFCE901B20D339000BCAE4 /* Build configuration list for PBXNativeTarget "AngryBirdsGestures" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CECFCE911B20D339000BCAE4 /* Debug */,
@@ -415,7 +417,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CECFCE931B20D339000BCAE4 /* Build configuration list for PBXNativeTarget "AngryBirdsTests" */ = {
+		CECFCE931B20D339000BCAE4 /* Build configuration list for PBXNativeTarget "AngryBirdsGesturesTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CECFCE941B20D339000BCAE4 /* Debug */,

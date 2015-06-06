@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CECFCE701B20D338000BCAE4"
-               BuildableName = "AngryBirds.app"
-               BlueprintName = "AngryBirds"
-               ReferencedContainer = "container:AngryBirds.xcodeproj">
+               BuildableName = "AngryBirdsGestures.app"
+               BlueprintName = "AngryBirdsGestures"
+               ReferencedContainer = "container:AngryBirdsGestures.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CECFCE851B20D338000BCAE4"
-               BuildableName = "AngryBirdsTests.xctest"
-               BlueprintName = "AngryBirdsTests"
-               ReferencedContainer = "container:AngryBirds.xcodeproj">
+               BuildableName = "AngryBirdsGesturesTests.xctest"
+               BlueprintName = "AngryBirdsGesturesTests"
+               ReferencedContainer = "container:AngryBirdsGestures.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CECFCE851B20D338000BCAE4"
-               BuildableName = "AngryBirdsTests.xctest"
-               BlueprintName = "AngryBirdsTests"
-               ReferencedContainer = "container:AngryBirds.xcodeproj">
+               BuildableName = "AngryBirdsGesturesTests.xctest"
+               BlueprintName = "AngryBirdsGesturesTests"
+               ReferencedContainer = "container:AngryBirdsGestures.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CECFCE701B20D338000BCAE4"
-            BuildableName = "AngryBirds.app"
-            BlueprintName = "AngryBirds"
-            ReferencedContainer = "container:AngryBirds.xcodeproj">
+            BuildableName = "AngryBirdsGestures.app"
+            BlueprintName = "AngryBirdsGestures"
+            ReferencedContainer = "container:AngryBirdsGestures.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -77,9 +77,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CECFCE701B20D338000BCAE4"
-            BuildableName = "AngryBirds.app"
-            BlueprintName = "AngryBirds"
-            ReferencedContainer = "container:AngryBirds.xcodeproj">
+            BuildableName = "AngryBirdsGestures.app"
+            BlueprintName = "AngryBirdsGestures"
+            ReferencedContainer = "container:AngryBirdsGestures.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -96,9 +96,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CECFCE701B20D338000BCAE4"
-            BuildableName = "AngryBirds.app"
-            BlueprintName = "AngryBirds"
-            ReferencedContainer = "container:AngryBirds.xcodeproj">
+            BuildableName = "AngryBirdsGestures.app"
+            BlueprintName = "AngryBirdsGestures"
+            ReferencedContainer = "container:AngryBirdsGestures.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
